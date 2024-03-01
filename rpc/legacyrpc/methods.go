@@ -1290,7 +1290,7 @@ func listAddressTransactions(icmd interface{}, w *wallet.Wallet) (interface{}, e
 		if err != nil {
 			return nil, err
 		}
-		hash160Map[string(addr.ScriptAddress())] = struct{}{}
+		hash160Map[addr.String()] = struct{}{}
 	}
 
 	return w.ListAddressTransactions(hash160Map)

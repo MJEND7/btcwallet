@@ -2278,15 +2278,15 @@ func (w *Wallet) ListAddressTransactions(pkHashes map[string]struct{}) ([]btcjso
 					if err != nil || len(addrs) != 1 {
 						continue
 					}
-					apkh, ok := addrs[0].(*btcutil.AddressPubKeyHash)
-					if !ok {
-						continue
-					}
-					_, ok = pkHashes[string(apkh.ScriptAddress())]
+
+					apkh := addrs[0]
+
+					_, ok := pkHashes[apkh.String()]
 					if !ok {
 						continue
 					}
 
+					fmt.Println("goo addres", apkh.String())
 					jsonResults := listTransactions(tx, detail,
 						w.Manager, syncBlock.Height, w.chainParams)
 					txList = append(txList, jsonResults...)
