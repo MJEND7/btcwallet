@@ -1,7 +1,7 @@
 module github.com/btcsuite/btcwallet
 
 require (
-	github.com/btcsuite/btcd v0.24.1-0.20240116200649-17fdc5219b36
+	github.com/btcsuite/btcd v0.24.1-0.20240301210420-1a2b599bf1af
 	github.com/btcsuite/btcd/btcec/v2 v2.2.2
 	github.com/btcsuite/btcd/btcutil v1.1.5
 	github.com/btcsuite/btcd/btcutil/psbt v1.1.8
@@ -10,8 +10,8 @@ require (
 	github.com/btcsuite/btcwallet/wallet/txauthor v1.3.4
 	github.com/btcsuite/btcwallet/wallet/txrules v1.2.1
 	github.com/btcsuite/btcwallet/wallet/txsizes v1.2.4
-	github.com/btcsuite/btcwallet/walletdb v1.4.1
-	github.com/btcsuite/btcwallet/wtxmgr v1.5.1
+	github.com/btcsuite/btcwallet/walletdb v1.4.2
+	github.com/btcsuite/btcwallet/wtxmgr v1.5.2
 	github.com/btcsuite/websocket v0.0.0-20150119174127-31079b680792
 	github.com/davecgh/go-spew v1.1.1
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.0.1
